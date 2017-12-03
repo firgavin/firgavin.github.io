@@ -155,6 +155,122 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-小知识整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/03/小知识整理/">小知识整理</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/03/小知识整理/" class="archive-article-date">
+  	<time datetime="2017-12-03T13:53:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[toc]</p>
+<h2 id="题目整理"><a href="#题目整理" class="headerlink" title="题目整理"></a>题目整理</h2><h3 id="什么是磁盘整理？简述固态硬盘与机械硬盘"><a href="#什么是磁盘整理？简述固态硬盘与机械硬盘" class="headerlink" title="什么是磁盘整理？简述固态硬盘与机械硬盘"></a>什么是磁盘整理？简述固态硬盘与机械硬盘</h3><ul>
+<li><p>什么是磁盘整理<br>磁盘碎片整理，就是通过系统软件或者专业的磁盘碎片整理软件对电脑磁盘在长期使用过程中产生的碎片和凌乱文件重新整理，可提高电脑的整体性能和运行速度。<br>磁盘碎片应该称为<strong>文件碎片</strong>，是因为文件被分散保存到整个磁盘的不同地方，而不是连续地保存在磁盘连续的簇中形成的。硬盘在使用一段时间后，由于反复写入和删除文件，磁盘中的空闲扇区会分散到整个磁盘中不连续的物理位置上，从而<strong>使文件不能存在连续的扇区里</strong>。这样，再读写文件时就需要到不同的地方去读取，增加了磁头的来回移动，降低了磁盘的访问速度。</p>
+</li>
+<li><p>传统机械硬盘<br>机械硬盘即是传统普通硬盘，主要由：盘片，磁头，盘片转轴及控制电机，磁头控制器，数据转换器，接口，缓存等几个部分组成。<br><strong>磁头</strong>可沿盘片的半径方向运动，加上盘片每分钟几千转的高速旋转，磁头就可以定位在<strong>盘片</strong>的指定位置上进行数据的读写操作。信息通过离磁性表面很近的磁头，由电磁流来改变极性方式被电磁流写到磁盘上，信息可以通过相反的方式读取。</p>
+</li>
+<li><p>固态硬盘<br>固态硬盘（Solid State Drives），简称固盘，固态硬盘用<strong>固态电子存储芯片</strong>阵列而制成的硬盘，由控制单元和存储单元（FLASH芯片、DRAM芯片）组成。固态硬盘在接口的规范和定义、功能及使用方法上与普通硬盘的完全相同，在产品外形和尺寸上也完全与普通硬盘一致。</p>
+</li>
+<li><p>两者区别</p>
+</li>
+</ul>
+<ol>
+<li><strong>防震抗摔性</strong>：机械硬盘都是磁碟型的，数据储存在磁碟扇区里。而固态硬盘是使用闪存颗粒（即内存、MP3、U盘等存储介质）制作而成，所以SSD固态硬盘内部不存在任何机械部件，这样即使在高速移动甚至伴随翻转倾斜的情况下也不会影响到正常使用，而且在发生碰撞和震荡时能够将数据丢失的可能性降到最小。相较机械硬盘，固硬占有绝对优势。(即安全性)</li>
+<li><strong>数据存储速度</strong>：从PConline评测室的评测数据来看，固态硬盘相对机械硬盘性能提升2倍多。(速度有读写之分)</li>
+<li>功耗：固态硬盘的功耗上也要低于机械硬盘。</li>
+<li>重量：固态硬盘在重量方面更轻，与常规1.8英寸硬盘相比，重量轻20-30克。</li>
+<li>噪音：由于固硬属于无机械部件及闪存芯片，所以具有了发热量小、散热快等特点，而且没有机械马达和风扇，工作噪音值为0分贝。机械硬盘就要逊色很多。</li>
+<li>使用寿命：SLC只有10万次的读写寿命，成本低廉的MLC，读写寿命仅有1万次。因此相对于固态硬盘，机械硬盘寿命更长。</li>
+</ol>
+<h3 id="简述操作系统中如何能使得快速打开文件又不占用磁盘空间"><a href="#简述操作系统中如何能使得快速打开文件又不占用磁盘空间" class="headerlink" title="简述操作系统中如何能使得快速打开文件又不占用磁盘空间"></a>简述操作系统中如何能使得快速打开文件又不占用磁盘空间</h3><p>我们称之为<strong>链接</strong>。以下以Linux为例，因为在Linux下的应用更为广泛。<br>Linux具有为<strong>一个文件起多个名字</strong>的功能，称为链接。被链接的文件可以存放在相同的目录下，但是必须有不同的文件名，而不用在硬盘上为同样的数据重复备份。另外，被链接的文件也可以有相同的文件名，但是存放在不同的目录下，这样只要对一个目录下的该文件进行修改，就可以完成对所有目录下同名链接文件的修改。对于某个文件的各链接文件，我们可以给它们指定不同的存取权限，以控制对信息的共享和增强安全性。<br>对比理解Windows下的快捷方式。</p>
+<h3 id="公交卡的技术原理及其过程"><a href="#公交卡的技术原理及其过程" class="headerlink" title="公交卡的技术原理及其过程"></a>公交卡的技术原理及其过程</h3><p><a href="http://open.163.com/movie/2017/1/5/A/MC95PTKED_MC95RES5A.html" target="_blank" rel="noopener">http://open.163.com/movie/2017/1/5/A/MC95PTKED_MC95RES5A.html</a></p>
+<h3 id="中断的概念及智能机的中断机制"><a href="#中断的概念及智能机的中断机制" class="headerlink" title="中断的概念及智能机的中断机制"></a>中断的概念及智能机的中断机制</h3><ul>
+<li><p>什么是中断<br>中断是指计算机运行过程中，出现某些意外情况需主机干预时，机器能自动停止正在运行的程序并转入处理新情况的程序，处理完毕后又返回原被暂停的程序继续运行。<br><strong>举个例子：Windows下 的Ctrl+Alt+Del会弹出资源管理器</strong></p>
+</li>
+<li><p>中断的分类<br>硬件中断（Hardware Interrupt）&amp; 软件中断（Software Interrupt）</p>
+</li>
+<li><p>中断过程<br>中断过程编辑<br>按照事件发生的顺序，中断过程包括[4]  ：<br>①中断源发出中断请求;<br>②判断当前处理机是否允许中断和该中断源是否被屏蔽;<br>③优先权排队;<br>④处理机执行完当前指令或当前指令无法执行完，则立即停止当前程序，保护断点地址和处理机当前状态，转入相应的中断服务程序;<br>⑤执行中断服务程序;<br>⑥恢复被保护的状态，执行“中断返回”指令回到被中断的程序或转入其他程序。<br>上述过程中前四项操作是由硬件完成的，后两项是由软件完成的。</p>
+</li>
+<li><p>作用<br>①提高计算机系统效率。<br>②维持系统可靠正常工作。<br>③满足实时处理要求。<br>④提供故障现场处理手段。</p>
+</li>
+</ul>
+<h3 id="举例说明人工语言的去歧义化"><a href="#举例说明人工语言的去歧义化" class="headerlink" title="举例说明人工语言的去歧义化"></a>举例说明人工语言的去歧义化</h3><p>区别于自然语言的语义有歧义，例如自然语言中英文句号可以表示句子的结束也可以表示小数点</p>
+<ul>
+<li>编译原理指出，数学上无法递归的证明语法无歧义</li>
+<li>自然语言的歧义现象一般归纳为语音、词义、语义、语法、语用等。</li>
+</ul>
+<p>下面以计算机语言为例：<br>计算机语言追求规范严谨。一般来说会在如下的地方产生歧义：</p>
+<ul>
+<li>计算机与人对程序的理解产生分歧。</li>
+<li>计算机对某些语法或者是符号的理解存在歧义。</li>
+</ul>
+<p>第一种情况中，一般是由于人对计算机语言的理解片面，或者忽略了底层的具体实现机制所造成的。<br>举个例子：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int i=1;</span><br><span class="line">	</span><br><span class="line">	do</span><br><span class="line">	&#123;</span><br><span class="line">		printf("%d\n",i);</span><br><span class="line">		i++;</span><br><span class="line">		if(i&lt;15) continue;</span><br><span class="line">	&#125;while(false);</span><br><span class="line">	</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这段程序的执行结果，如果对continue的理解不到位的话，那么可能会理解为输出1-14。实际上，结果为1.因为continue的作用是跳过当前的循环体。显然while条件不属于循环体，那么将会被执行。这里如果思维定式，按照当道循环理解，就会出错。（do-while属于直道循环）</p>
+<p>第二种情况中，某些符号或者语用在自然语言中人可以加以推理、分析、判断，进而消除歧义，而对于计算机来说，其并不能主观思考，因而需要严格区分。通常情况下，我们加以严格的语法规范和区分来避免计算机理解出差错。<br>举个例子：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">void OS_Solaris_print()</span><br><span class="line">&#123;</span><br><span class="line">        printf("Solaris - Sun Microsystems\n");</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void OS_Windows_print()</span><br><span class="line">&#123;</span><br><span class="line">        printf("Windows - Microsoft\n");</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">void OS_HP-UX_print()</span><br><span class="line">&#123;</span><br><span class="line">        printf("HP-UX - Hewlett Packard\n");</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">        int num;</span><br><span class="line">        printf("Enter the number (1-3):\n");</span><br><span class="line">        scanf("%d",&amp;num);</span><br><span class="line">        switch(num)</span><br><span class="line">        &#123;</span><br><span class="line">                case <span class="number">1</span>:</span><br><span class="line">                        OS_Solaris_print();</span><br><span class="line">                        break;</span><br><span class="line">                case <span class="number">2</span>:</span><br><span class="line">                        OS_Windows_print();</span><br><span class="line">                        break;</span><br><span class="line">                case <span class="number">3</span>:</span><br><span class="line">                        OS_HP-UX_print();//计算机无法理解此处的-是什么意思</span><br><span class="line">                        break;</span><br><span class="line">                default:</span><br><span class="line">                        printf("Hmm! only 1-3 :-)\n");</span><br><span class="line">                        break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如上代码无法通过编译，注意注释区。函数名OS_HP-UX_print();中的-号计算机无法理解，对于计算机来说，“-”是减号，而对于人来说，或者在自然语言中，“-”可能是减号，也可能是有转折、分隔的意思。类似的例子还有很多，比如，计算机语言中，“=”是赋值号，而在数学语言中“=”还可以是等于号，因而计算机语言例如C/C++用“==”来判断是否相等，JAVA中更是引入了equals来判断。类似还有<code>i++</code>和<code>++i</code>的区别等。</p>
+<p><strong>编程时应该避免歧义发生（可读性）</strong></p>
+<h3 id="结合Internat的构架和TCP-IP协议等现在的网络构架简述计算机网络的去中心化"><a href="#结合Internat的构架和TCP-IP协议等现在的网络构架简述计算机网络的去中心化" class="headerlink" title="结合Internat的构架和TCP/IP协议等现在的网络构架简述计算机网络的去中心化"></a>结合Internat的构架和TCP/IP协议等现在的网络构架简述计算机网络的去中心化</h3><h3 id="Cache是用来平衡高速部件和低速部件的。将数十个text文件在内存中合并后同样写入3块机械硬盘，结合利用Cache绘图说明方法和逻辑组件"><a href="#Cache是用来平衡高速部件和低速部件的。将数十个text文件在内存中合并后同样写入3块机械硬盘，结合利用Cache绘图说明方法和逻辑组件" class="headerlink" title="Cache是用来平衡高速部件和低速部件的。将数十个text文件在内存中合并后同样写入3块机械硬盘，结合利用Cache绘图说明方法和逻辑组件"></a>Cache是用来平衡高速部件和低速部件的。将数十个text文件在内存中合并后同样写入3块机械硬盘，结合利用Cache绘图说明方法和逻辑组件</h3><h2 id="知识点整理"><a href="#知识点整理" class="headerlink" title="知识点整理"></a>知识点整理</h2><h3 id="加密技术整理"><a href="#加密技术整理" class="headerlink" title="加密技术整理"></a>加密技术整理</h3><ul>
+<li><p>密码学概述<br><a href="https://www.cnblogs.com/fenglie/articles/3323530.html" target="_blank" rel="noopener">https://www.cnblogs.com/fenglie/articles/3323530.html</a></p>
+</li>
+<li><p>密码学中的认证技术<br>最基本的：<a href="http://www.8btc.com/passwordd/" target="_blank" rel="noopener">http://www.8btc.com/passwordd/</a></p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/03/小知识整理/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
